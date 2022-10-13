@@ -31,7 +31,7 @@ export class Color {
 }
 
 export enum FontFamily {
-  Primary = 'Gotham',
+  Primary = 'Raleway',
 }
 
 export enum FontWeight {
