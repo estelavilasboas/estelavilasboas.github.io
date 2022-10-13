@@ -41,7 +41,7 @@ app.listen(port, () => {
   console.log(`Express server started at http://localhost:${port}`);
 });
 
-const indexHTML = fs.readFileSync(path.resolve(__dirname, '../public/index.html'), {
+const indexHTML = fs.readFileSync(path.resolve(__dirname, '../index.html'), {
   encoding: 'utf8',
 });
 

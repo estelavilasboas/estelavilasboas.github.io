@@ -87,7 +87,7 @@ const clientConfig = createConfig([
   addPlugins(
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public/index.html'),
+      template: path.resolve(__dirname, 'index.html'),
       filename: 'index.html',
       inject: 'body',
       ...(process.env.SSR_ENABLED
