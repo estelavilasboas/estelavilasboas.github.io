@@ -1,7 +1,9 @@
 export enum BrandColor {
-  Blue = '#16AAE4',
-  Pink = '#FF388B',
-  Purple = '#663AE7',
+  Blue = '#286767',
+  Green = '#2E614F',
+  Orange = '#FA9989',
+  Pink = '#E7DAE1',
+  Snow = '#F6F1F4',
 }
 
 // We used class rather than enums since enums don't support computed values
@@ -16,10 +18,12 @@ export class Color {
   public static readonly GrayXDark = '#525252';
 
   public static readonly Primary = BrandColor.Blue;
-  public static readonly Secondary = Color.Black;
-  public static readonly Accessory = BrandColor.Purple;
+  public static readonly Secondary = BrandColor.Green;
+  public static readonly Accessory = BrandColor.Orange;
+  public static readonly Accessory2 = BrandColor.Pink;
+  public static readonly Accessory3 = BrandColor.Snow;
   public static readonly Neutral = Color.GrayDark;
-  public static readonly CallToAction = BrandColor.Pink;
+  public static readonly CallToAction = BrandColor.Orange;
 
   public static readonly Alert = '#DC2729';
   public static readonly Warning = '#F5A623';
