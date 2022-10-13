@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "sourceMap": false,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "@app": ["app"],
+      "@app/*": ["app/*"],
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+      "@atomic": ["atomic"],
+      "@atomic/*": ["atomic/*"],
+      "@atomic-samples": ["atomic-samples"],
+      "@atomic-samples/*": ["atomic-samples/*"]
+    }
+  },
+  "include": ["src"],
+  "compileOnSave": false
+}
