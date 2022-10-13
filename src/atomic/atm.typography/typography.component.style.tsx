@@ -2,16 +2,29 @@ import styled, { css } from 'styled-components';
 
 import { Color, FontFamily, FontSize, FontWeight, Spacing } from '@atomic/obj.constants';
 
-export const HDisplay = styled.label`
-  color: ${Color.Black};
-  font-size: ${FontSize.Large};
+export type TextVariant = 'primary' | 'accessory' | 'accessory2' | 'accessory3';
+
+const TextVariantColors: Record<TextVariant, string> = {
+  primary: Color.Primary,
+  accessory: Color.Accessory,
+  accessory2: Color.Accessory2,
+  accessory3: Color.Accessory3,
+};
+
+export interface TextProps {
+  variant?: TextVariant;
+}
+
+export const HDisplay = styled.label<TextProps>`
+  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  font-size: ${FontSize.XXLarge};
   font-family: ${FontFamily.Primary};
-  font-weight: ${FontWeight.Medium};
+  font-weight: ${FontWeight.Bold};
 `;
 HDisplay.displayName = 'HDisplay';
 
-export const H1 = styled.h1`
-  color: ${Color.Black};
+export const H1 = styled.h1<TextProps>`
+  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.XLarge};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Medium};
@@ -19,8 +32,8 @@ export const H1 = styled.h1`
   margin-top: ${Spacing.Large};
 `;
 
-export const H2 = styled.h2`
-  color: ${Color.Black};
+export const H2 = styled.h2<TextProps>`
+  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.Large};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Medium};
@@ -29,10 +42,9 @@ export const H2 = styled.h2`
 `;
 H2.displayName = 'H2';
 
-export const H3Height = FontSize.Medium;
-export const H3 = styled.h3`
-  color: ${Color.Black};
-  font-size: ${H3Height};
+export const H3 = styled.h3<TextProps>`
+  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  font-size: ${FontSize.Medium};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
 `;
@@ -47,12 +59,14 @@ export const H4 = styled.h4`
 `;
 H4.displayName = 'H4';
 
-export const Body = styled.p`
-  color: ${Color.Black};
+export const Body = styled.p<TextProps>`
+  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
   margin: 0;
   font-size: ${FontSize.Small};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Normal};
+  line-height: 1.5;
+
 `;
 Body.displayName = 'Body';
 
