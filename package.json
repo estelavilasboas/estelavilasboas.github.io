@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b develop -d build",
     "build": "concurrently -p {name} --names typescript,webpack --prefix-colors bgBlue.bold,bgWhite.bold \"npm run type-check\" \"cross-env TS_NODE_PROJECT=\"\"tsconfig-webpack.json\"\" webpack --mode=production\"",
     "build:ssr": "concurrently -p {name} --names typescript,webpack --prefix-colors bgBlue.bold,bgWhite.bold \"npm run type-check\" \"cross-env TS_NODE_PROJECT=\"\"tsconfig-webpack.json\"\" SSR_ENABLED=true webpack --mode=production\"",
     "start": "concurrently -p {name} --names lint,typescript,webpack --prefix-colors bgGreen.bold,bgBlue.bold,bgWhite.bold \"npm run lint\" \"npm run type-check\" \"npm run dev\"",
