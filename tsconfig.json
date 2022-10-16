@@ -18,7 +18,7 @@
     "incremental": true,
     "sourceMap": false,
     "jsx": "react",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
       "@app": ["app"],
       "@app/*": ["app/*"],
@@ -30,6 +30,6 @@
       "@atomic-samples/*": ["atomic-samples/*"]
     }
   },
-  "include": ["src"],
+  "include": ["./src"],
   "compileOnSave": false
 }
