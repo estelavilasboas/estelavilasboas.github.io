@@ -1,7 +1,8 @@
 {
   "name": "estelavilasboas.github.io",
-  "homepage": "https://estelavilasboas.github.io/estelavilasboas.github.io/",
+  "homepage": "https://estelavilasboas.github.io",
   "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "version": "0.1.0",
   "sideEffects": [
     "*.css"
@@ -114,6 +115,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.30.0",
     "get-graphql-schema": "2.1.2",
+    "gh-pages": "^4.0.0",
     "graphql-tag": "2.12.6",
     "html-webpack-plugin": "5.5.0",
     "husky": "8.0.1",
