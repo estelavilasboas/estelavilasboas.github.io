@@ -4,7 +4,7 @@ import { Router } from 'react-router-dom';
 import { Route } from '@app/core/route';
 import { AboutMePage } from './modules/about-me';
 
-const history = createBrowserHistory({ basename: '/'});
+const history = createBrowserHistory({ basename: '/' });
 
 export const Routes: React.FC = () => {
   return (

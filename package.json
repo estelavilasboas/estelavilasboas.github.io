@@ -1,6 +1,7 @@
 {
   "name": "estelavilasboas.github.io",
-  "homepage": "https://estelavilasboas.github.io/",
+  "homepage": "https://estelavilasboas.github.io/estelavilasboas.github.io/",
+  "predeploy": "npm run build",
   "version": "0.1.0",
   "sideEffects": [
     "*.css"
