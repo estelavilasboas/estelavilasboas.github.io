@@ -1,11 +1,11 @@
 {
   "name": "estelavilasboas.github.io",
-  "homepage": "https://estelavilasboas.github.io",
+  "homepage": "https://estelavilasboas.github.io/",
   "version": "0.1.0",
   "sideEffects": [
     "*.css"
   ],
-  "private": true,
+  "private": false,
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b production -d build",
