@@ -16,7 +16,7 @@ import * as path from 'path';
 import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import { IgnorePlugin } from 'webpack';
+import { IgnorePlugin, ProvidePlugin, DefinePlugin } from 'webpack';
 import * as dotenv from 'dotenv';
 import nodeExternals from 'webpack-node-externals';
 
@@ -79,6 +79,19 @@ const commonConfig = [
   }),
   addRule({ test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/, type: 'asset/resource' }),
   addRule({ test: /\.(jpeg|jpg|png|gif|svg)?$/, type: 'asset/resource' }),
+
+  // define process
+  addPlugins(
+    new ProvidePlugin({
+      process: 'process/browser.js',
+    }),
+  ),
+  // define BASE_URL
+  addPlugins(
+    new DefinePlugin({
+      PUBLIC_URL: JSON.stringify(process.env.PUBLIC_URL),
+    }),
+  ),
 ];
 
 const clientConfig = createConfig([
