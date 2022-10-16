@@ -11,3 +11,5 @@ declare module '*.graphql' {
   const value: DocumentNode;
   export default value;
 }
+
+declare const PUBLIC_URL: string;
