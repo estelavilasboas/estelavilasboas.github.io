@@ -12,7 +12,6 @@ import { FrontendEnvironmentVariables } from '@app/frontend-environment-variable
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
 
 // defined via html <script> tag:
 // static - baked on webpack build
@@ -26,11 +25,9 @@ const container = document.getElementById('root');
 const isSSR = container.hasChildNodes();
 
 const app = (
-  <BrowserRouter basename={window.location.pathname || ''}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 if (isSSR) {
