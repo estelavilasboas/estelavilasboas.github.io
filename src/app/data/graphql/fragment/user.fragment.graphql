@@ -1,7 +1,0 @@
-fragment User on User {
-  id
-  name
-  avatarUrl
-  email
-  role
-}

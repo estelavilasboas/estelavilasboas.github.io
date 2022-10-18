@@ -1,9 +1,0 @@
-query UserQuery($id: Int!) {
-  user(id: $id) {
-    id
-    name
-    avatarUrl
-    email
-    role
-  }
-}
