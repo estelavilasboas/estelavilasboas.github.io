@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Color, FontFamily, FontSize, FontWeight, Spacing } from '@atomic/obj.constants';
+import { Color, FontFamily, FontSize, FontWeight, Spacing } from '../obj.constants';
 
 export type TextVariant = 'primary' | 'accessory' | 'accessory2' | 'accessory3';
 

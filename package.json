@@ -48,9 +48,13 @@
     ]
   },
   "resolutions": {
-    "nth-check": "2.1.1"
+    "glob-parent": "5.1.2",
+    "nth-check": "2.1.1",
+    "trim": "0.0.3",
+    "trim-newlines": "3.0.1"
   },
   "devDependencies": {
+    "@storybook/react": "6.5.9",
     "@types/react-router-dom": "5.3.3",
     "@types/styled-components": "5.1.26",
     "gh-pages": "4.0.0"

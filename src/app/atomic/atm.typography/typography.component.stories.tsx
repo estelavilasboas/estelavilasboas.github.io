@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { Meta } from '@storybook/react/types-6-0';
 
-import { FontFamily, FontWeight } from '@atomic/obj.constants';
-import { Col, Grid, Row } from '@atomic/obj.grid';
+import { FontFamily, FontWeight } from '../obj.constants';
+import { Col, Grid, Row } from '../obj.grid';
 
 import { TypographyComponents } from './typography-components.component';
 import {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Color, Spacing } from '@atomic/obj.constants';
+import { Color, Spacing } from '../../atomic/obj.constants';
 
 export const BackgroundStyled = styled.div`
   background-color: ${Color.Primary};
