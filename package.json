@@ -22,6 +22,8 @@
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b production -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +52,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "5.3.3",
-    "@types/styled-components": "5.1.26"
+    "@types/styled-components": "5.1.26",
+    "gh-pages": "4.0.0"
   }
 }
