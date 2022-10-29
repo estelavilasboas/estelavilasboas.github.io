@@ -99,7 +99,7 @@ export const Border = {
   Color: Color.GrayLight,
   Width: '1px',
   Radius: '4px',
-  RadiusLarge: '24px',
+  RadiusLarge: '200px',
 };
 
 // Security recommendation: Failing to enforce passwords of at least 7 characters, a complexity
