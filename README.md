@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Hello there!
+
+I am Estela and this is my personal project for a website. 
+I'm a front-end developer with a degree in Computer Science. I'm current living in Brazil and I'm constantly working on improving myself.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
