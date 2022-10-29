@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 import { Border } from '../../../atomic/obj.constants';
 
+const HORIZONTAL_SHADOW = '15px';
+const VERTICAL_SHADOW = '13px';
+const SPREAD_RADIUS = '4px';
+
+const LEFT_POSITION = '60%';
+const TOP_POSITION = '5%';
+
+const MAX_WIDTH = '350px';
+
 export const ProfileImageWrapper = styled.div`
   position: absolute;
-  left: 60%;
-  top: 5%;
-  max-width: 350px;
+  left: ${LEFT_POSITION};
+  top: ${TOP_POSITION};
+  max-width: ${MAX_WIDTH};
   border-radius: ${Border.RadiusLarge};
   overflow: hidden;
-  -webkit-box-shadow: 15px 13px 0px 4px rgba(231,218,225,1);
-  -moz-box-shadow: 15px 13px 0px 4px rgba(231,218,225,1);
-  box-shadow: 15px 13px 0px 4px rgba(231,218,225,1);
+  -webkit-box-shadow: ${HORIZONTAL_SHADOW} ${VERTICAL_SHADOW} 0px ${SPREAD_RADIUS} rgba(231,218,225,1);
+  -moz-box-shadow: ${HORIZONTAL_SHADOW} ${VERTICAL_SHADOW} 0px ${SPREAD_RADIUS} rgba(231,218,225,1);
+  box-shadow: ${HORIZONTAL_SHADOW} ${VERTICAL_SHADOW} 0px ${SPREAD_RADIUS} rgba(231,218,225,1);
 `;
