@@ -47,6 +47,7 @@ export const H3 = styled.h3<TextProps>`
   font-size: ${FontSize.Medium};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
+  text-align: center;
 `;
 H3.displayName = 'H3';
 
