@@ -9,6 +9,6 @@ export const BackgroundStyled = styled.div`
 
 export const IntroductionWrapper = styled.div`
   margin: 0 15%;
-  padding: ${Spacing.XLarge};
+  padding-vertical: ${Spacing.XXLarge};
   max-width: 30%;
 `;

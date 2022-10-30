@@ -52,11 +52,11 @@ export enum FontSize {
 
 export enum Spacing {
   XSmall = '4px',
-  Small = '12px',
-  Medium = '16px',
-  Large = '24px',
-  XLarge = '32px',
-  XXLarge = '48px',
+  Small = '16px',
+  Medium = '24px',
+  Large = '32px',
+  XLarge = '48px',
+  XXLarge = '96px',
 }
 
 export const HeaderHeight = {

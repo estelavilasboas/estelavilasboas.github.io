@@ -31,8 +31,8 @@ Hbox.Item = styled.div<HboxProps>`
 `;
 Hbox.Item.displayName = 'Hbox.Item';
 
-Hbox.Separator = styled.div`
-  width: ${Spacing.Small};
+Hbox.Separator = styled.div<SeparatorProps>`
+  width: ${(props) => props.size ?? Spacing.Small}};
 `;
 Hbox.Separator.displayName = 'Hbox.Separator';
 
