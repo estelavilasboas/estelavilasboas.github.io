@@ -26,3 +26,32 @@ export const IntroductionWrapper = styled.div`
   padding: ${Spacing.XLarge} 0;
   max-width: 30%;
 `;
+
+export const BulletStyled = styled.div`
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: ${Color.Primary};
+`;
+
+export const LineStyled = styled.div`
+  width: 2px;
+  height: 100%;
+  margin-left: 7px;
+  background-color: ${Color.Primary};
+`;
+
+export const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: ${Color.Primary};
+`;
+
+export const TooltipStyled = styled.div`
+  width: 350px;
+  height: 100%;
+  padding: 16px;
+  background-color: ${Color.White};
+`;
