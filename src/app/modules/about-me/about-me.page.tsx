@@ -24,12 +24,12 @@ export const AboutMePage: React.FC = () => {
   return (
     <Row noGutter>
       {/* WIP WARNING START */}
-      {/* <BackgroundColor style={{ position: "absolute", zIndex: 1, textAlign: "center"}}>
+      <BackgroundColor style={{ position: "absolute", zIndex: 1, textAlign: "center"}}>
         <H1 variant='white'>WIP</H1>
         <H3 variant='white'>Hi! This website is a work in progress. Soon it will be available.</H3>
       </BackgroundColor>
       <Separator size={Spacing.XXLarge} />
-      <Separator size={Spacing.XXLarge} /> */}
+      <Separator size={Spacing.XXLarge} />
       {/* WIP WARNING END */}
 
       <Header />
