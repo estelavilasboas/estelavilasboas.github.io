@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Spacing } from "../../../atomic/obj.constants";
+import { Spacing } from "../../../../atomic/obj.constants";
 
 export const IntroductionWrapper = styled.div`
   margin: 0 15%;

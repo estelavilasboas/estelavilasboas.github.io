@@ -17,9 +17,9 @@ import {
   TrianglePointingLeft,
   TrianglePointingRight,
 } from "./about-me.style";
-import { HorizontalImageWrapper } from "./components/profile-image.style";
+import { HorizontalImageWrapper } from "./components/atm.image/image.style";
 import { Separator } from "../../atomic/obj.box/box.component.style";
-import { Header } from "./components/header.component";
+import { Header } from "./components/mol.header/header.component";
 
 const strings = aboutMeStrings;
 

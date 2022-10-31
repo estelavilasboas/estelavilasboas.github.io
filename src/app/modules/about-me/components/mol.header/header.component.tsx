@@ -6,10 +6,10 @@ import {
   Spacing,
   Body,
   BackgroundColor,
-} from "../../../atomic";
-import { aboutMeStrings } from "../about-me.strings";
+} from "../../../../atomic";
+import { aboutMeStrings } from "../../about-me.strings";
 import { IntroductionWrapper } from "./header.style";
-import { VerticalImageWrapper } from "./profile-image.style";
+import { VerticalImageWrapper } from "../atm.image/image.style";
 
 const strings = aboutMeStrings;
 

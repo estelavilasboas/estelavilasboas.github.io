@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Border, Spacing } from "../../../atomic/obj.constants";
+import { Border, Spacing } from "../../../../atomic/obj.constants";
 
 const HORIZONTAL_SHADOW = "10px";
 const VERTICAL_SHADOW = "10px";
