@@ -1,1 +1,1 @@
-export * from './divider.style';
+export * from "./divider.style";
