@@ -1,9 +1,4 @@
-import {
-  BackgroundColor,
-  H3,
-  H1,
-  Spacing,
-} from "../../atomic";
+import { BackgroundColor, H3, H1, Spacing } from "../../atomic";
 import { Row } from "../../atomic/obj.grid";
 import * as React from "react";
 import { Separator } from "../../atomic/obj.box/box.component.style";
@@ -39,7 +34,7 @@ export const AboutMePage: React.FC = () => {
         </H3>
         <Separator size={Spacing.XXLarge} />
 
-        <Timeline items={aboutMeStrings.timeline}/>
+        <Timeline items={aboutMeStrings.timeline} />
       </BackgroundColor>
     </Row>
   );

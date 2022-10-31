@@ -7,7 +7,6 @@ interface TimelineProps {
   items: TooltipProps[];
 }
 
-
 export const Timeline: React.FC<TimelineProps> = ({ items }) => (
   <>
     {items.map((item, index) => {
@@ -31,7 +30,10 @@ export const TimelineItem: React.FC<TimelineItemProps> = (props) => {
 
   return (
     <Hbox>
-      <Hbox.Item hAlign="flex-end" style={{ visibility: hideLeft ? 'hidden' : 'visible' }}>
+      <Hbox.Item
+        hAlign="flex-end"
+        style={{ visibility: hideLeft ? "hidden" : "visible" }}
+      >
         <Tooltip {...props} />
         <Separator size={Spacing.XLarge} />
       </Hbox.Item>
@@ -43,7 +45,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = (props) => {
       </Hbox.Item>
       <Hbox.Separator size={Spacing.XLarge} />
 
-      <Hbox.Item style={{ visibility: hideRight ? 'hidden' : 'visible' }}>
+      <Hbox.Item style={{ visibility: hideRight ? "hidden" : "visible" }}>
         <Tooltip {...props} />
         <Separator size={Spacing.XLarge} />
       </Hbox.Item>

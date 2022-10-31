@@ -68,12 +68,14 @@ export const H3 = styled.h3<TextProps>`
 `;
 H3.displayName = "H3";
 
-export const H4Height = FontSize.XSmall;
-export const H4 = styled.h4`
-  color: ${Color.GrayXDark};
+export const H4Height = FontSize.Small;
+export const H4 = styled.p<TextProps>`
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Primary};
   font-size: ${H4Height};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
+  line-height: 0.1;
 `;
 H4.displayName = "H4";
 
@@ -81,7 +83,7 @@ export const Body = styled.p<TextProps>`
   color: ${(props) =>
     props.variant ? TextVariantColors[props.variant] : Color.Primary};
   margin: 0;
-  font-size: ${FontSize.Small};
+  font-size: ${FontSize.XSmall};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Normal};
   line-height: 1.5;
@@ -91,7 +93,7 @@ Body.displayName = "Body";
 export const BodySecondary = styled.label<TextProps>`
   color: ${(props) =>
     props.variant ? TextVariantColors[props.variant] : Color.Primary};
-  font-size: ${FontSize.XSmall};
+  font-size: ${FontSize.XXSmall};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Normal};
   line-height: 1.5;
