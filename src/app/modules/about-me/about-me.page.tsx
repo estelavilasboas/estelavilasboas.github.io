@@ -2,6 +2,7 @@ import {
   BackgroundColor,
   Body,
   BodySecondary,
+  Divider,
   H3,
   Hbox,
   Spacing,
@@ -10,7 +11,6 @@ import { Row } from "../../atomic/obj.grid";
 import * as React from "react";
 import {
   BulletStyled,
-  Divider,
   LineStyled,
   TooltipStyled,
   TrianglePointingLeft,

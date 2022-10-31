@@ -15,14 +15,6 @@ export const LineStyled = styled.div`
   background-color: ${Color.Primary};
 `;
 
-export const Divider = styled.div`
-  width: 100%;
-  height: 1px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: ${Color.Primary};
-`;
-
 const HORIZONTAL_SHADOW = "10px";
 const VERTICAL_SHADOW = "10px";
 const SPREAD_RADIUS = "2px";
