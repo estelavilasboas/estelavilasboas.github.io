@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color } from "../../atomic/obj.constants";
+import { Color } from "../../../../atomic";
 
 export const BulletStyled = styled.div`
   width: 16px;
