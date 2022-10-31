@@ -8,13 +8,14 @@ import {
   Spacing,
 } from "../obj.constants";
 
-export type TextVariant = "primary" | "accessory" | "accessory2" | "accessory3";
+export type TextVariant = "primary" | "accessory" | "accessory2" | "accessory3" | "white";
 
 const TextVariantColors: Record<TextVariant, string> = {
   primary: Color.Primary,
   accessory: Color.Accessory,
   accessory2: Color.Accessory2,
   accessory3: Color.Accessory3,
+  white: Color.White,
 };
 
 export interface TextProps {
