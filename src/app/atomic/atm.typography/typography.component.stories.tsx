@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { Meta } from '@storybook/react/types-6-0';
+import { Meta } from "@storybook/react/types-6-0";
 
-import { FontFamily, FontWeight } from '../obj.constants';
-import { Col, Grid, Row } from '../obj.grid';
+import { FontFamily, FontWeight } from "../obj.constants";
+import { Col, Grid, Row } from "../obj.grid";
 
-import { TypographyComponents } from './typography-components.component';
+import { TypographyComponents } from "./typography-components.component";
 import {
   Body,
   BodySecondary,
@@ -21,10 +21,10 @@ import {
   InputPlaceholder,
   InputValue,
   ProductPrice,
-} from './typography.component.style';
+} from "./typography.component.style";
 
 export default {
-  title: 'Atomic/Atoms/Typography',
+  title: "Atomic/Atoms/Typography",
   component: TypographyComponents,
 } as Meta;
 
@@ -51,14 +51,18 @@ export const Typography: React.FC = () => (
     </Row>
     <Row mb>
       <Col>
-        <Body>This is the body paragraph style. Testing component with two lines of text.</Body>
+        <Body>
+          This is the body paragraph style. Testing component with two lines of
+          text.
+        </Body>
         <Body>This is the second line</Body>
       </Col>
     </Row>
     <Row mb>
       <Col>
         <BodySecondary>
-          This is the secondary body paragraph style. Testing component with two lines of text.
+          This is the secondary body paragraph style. Testing component with two
+          lines of text.
         </BodySecondary>
       </Col>
     </Row>
@@ -79,12 +83,17 @@ export const Typography: React.FC = () => (
     </Row>
     <Row mb>
       <Col>
-        <InputPlaceholder>This is the input placeholder style.</InputPlaceholder>
+        <InputPlaceholder>
+          This is the input placeholder style.
+        </InputPlaceholder>
       </Col>
     </Row>
     <Row mb>
       <Col>
-        <ProductPrice>This is the product price style. Testing component with two lines of text.</ProductPrice>
+        <ProductPrice>
+          This is the product price style. Testing component with two lines of
+          text.
+        </ProductPrice>
       </Col>
     </Row>
     <Row mb>
@@ -100,22 +109,50 @@ export const Typography: React.FC = () => (
 
     <Row>
       <Col>
-        <span style={{ fontFamily: FontFamily.Primary, fontWeight: FontWeight.Bold }}>This is bold style.</span>
+        <span
+          style={{
+            fontFamily: FontFamily.Primary,
+            fontWeight: FontWeight.Bold,
+          }}
+        >
+          This is bold style.
+        </span>
       </Col>
     </Row>
     <Row>
       <Col>
-        <span style={{ fontFamily: FontFamily.Primary, fontWeight: FontWeight.Medium }}>This is medium style.</span>
+        <span
+          style={{
+            fontFamily: FontFamily.Primary,
+            fontWeight: FontWeight.Medium,
+          }}
+        >
+          This is medium style.
+        </span>
       </Col>
     </Row>
     <Row>
       <Col>
-        <span style={{ fontFamily: FontFamily.Primary, fontWeight: FontWeight.Normal }}>This is normal style.</span>
+        <span
+          style={{
+            fontFamily: FontFamily.Primary,
+            fontWeight: FontWeight.Normal,
+          }}
+        >
+          This is normal style.
+        </span>
       </Col>
     </Row>
     <Row mb>
       <Col>
-        <span style={{ fontFamily: FontFamily.Primary, fontWeight: FontWeight.Lighter }}>This is lighter style.</span>
+        <span
+          style={{
+            fontFamily: FontFamily.Primary,
+            fontWeight: FontWeight.Lighter,
+          }}
+        >
+          This is lighter style.
+        </span>
       </Col>
     </Row>
   </Grid>

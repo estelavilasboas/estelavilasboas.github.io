@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 import {
   Body,
@@ -15,7 +15,7 @@ import {
   InputPlaceholder,
   InputValue,
   ProductPrice,
-} from './typography.component.style';
+} from "./typography.component.style";
 
 export const TypographyComponents: React.FC = (props) => {
   return (

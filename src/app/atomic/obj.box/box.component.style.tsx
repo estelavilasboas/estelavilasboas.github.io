@@ -1,12 +1,26 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Spacing } from '../obj.constants';
+import { Spacing } from "../obj.constants";
 
 interface BoxProps {
   // src: https://www.w3schools.com/cssref/css3_pr_align-items.asp
-  hAlign?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';
+  hAlign?:
+    | "stretch"
+    | "center"
+    | "flex-start"
+    | "flex-end"
+    | "baseline"
+    | "initial"
+    | "inherit";
   // src: https://www.w3schools.com/cssref/css3_pr_justify-content.asp
-  vAlign?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'initial' | 'inherit';
+  vAlign?:
+    | "flex-start"
+    | "flex-end"
+    | "center"
+    | "space-between"
+    | "space-around"
+    | "initial"
+    | "inherit";
 }
 
 export interface HboxProps extends BoxProps {
@@ -20,21 +34,21 @@ const HboxStyled = styled.div`
 `;
 
 export const Hbox: any = HboxStyled;
-Hbox.displayName = 'Hbox';
+Hbox.displayName = "Hbox";
 
 Hbox.Item = styled.div<HboxProps>`
   flex-direction: column;
   display: flex;
-  ${(props) => (!props.noGrow ? 'flex: 1;' : null)}
-  justify-content: ${(props) => (props.vAlign ? props.vAlign : 'flex-start')};
-  align-items: ${(props) => (props.hAlign ? props.hAlign : 'stretch')};
+  ${(props) => (!props.noGrow ? "flex: 1;" : null)}
+  justify-content: ${(props) => (props.vAlign ? props.vAlign : "flex-start")};
+  align-items: ${(props) => (props.hAlign ? props.hAlign : "stretch")};
 `;
-Hbox.Item.displayName = 'Hbox.Item';
+Hbox.Item.displayName = "Hbox.Item";
 
 Hbox.Separator = styled.div<SeparatorProps>`
   width: ${(props) => props.size ?? Spacing.Small}};
 `;
-Hbox.Separator.displayName = 'Hbox.Separator';
+Hbox.Separator.displayName = "Hbox.Separator";
 
 interface SeparatorProps {
   size?: Spacing;

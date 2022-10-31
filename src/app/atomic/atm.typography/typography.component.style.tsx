@@ -1,8 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import { Color, FontFamily, FontSize, FontWeight, Spacing } from '../obj.constants';
+import {
+  Color,
+  FontFamily,
+  FontSize,
+  FontWeight,
+  Spacing,
+} from "../obj.constants";
 
-export type TextVariant = 'primary' | 'accessory' | 'accessory2' | 'accessory3';
+export type TextVariant = "primary" | "accessory" | "accessory2" | "accessory3";
 
 const TextVariantColors: Record<TextVariant, string> = {
   primary: Color.Primary,
@@ -16,15 +22,17 @@ export interface TextProps {
 }
 
 export const HDisplay = styled.label<TextProps>`
-  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.XXLarge};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
 `;
-HDisplay.displayName = 'HDisplay';
+HDisplay.displayName = "HDisplay";
 
 export const H1 = styled.h1<TextProps>`
-  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.XLarge};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Medium};
@@ -33,23 +41,25 @@ export const H1 = styled.h1<TextProps>`
 `;
 
 export const H2 = styled.h2<TextProps>`
-  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.Large};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Medium};
   margin-bottom: ${Spacing.Small};
   margin-top: ${Spacing.Large};
 `;
-H2.displayName = 'H2';
+H2.displayName = "H2";
 
 export const H3 = styled.h3<TextProps>`
-  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Black};
   font-size: ${FontSize.Medium};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
   text-align: center;
 `;
-H3.displayName = 'H3';
+H3.displayName = "H3";
 
 export const H4Height = FontSize.XSmall;
 export const H4 = styled.h4`
@@ -58,18 +68,18 @@ export const H4 = styled.h4`
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Bold};
 `;
-H4.displayName = 'H4';
+H4.displayName = "H4";
 
 export const Body = styled.p<TextProps>`
-  color: ${(props) => props.variant ? TextVariantColors[props.variant] : Color.Black};
+  color: ${(props) =>
+    props.variant ? TextVariantColors[props.variant] : Color.Black};
   margin: 0;
   font-size: ${FontSize.Small};
   font-family: ${FontFamily.Primary};
   font-weight: ${FontWeight.Normal};
   line-height: 1.5;
-
 `;
-Body.displayName = 'Body';
+Body.displayName = "Body";
 
 export const BodySecondary = styled.label`
   color: ${Color.GrayDark};
