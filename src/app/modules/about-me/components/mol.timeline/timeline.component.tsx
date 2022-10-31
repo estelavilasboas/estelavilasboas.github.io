@@ -1,8 +1,4 @@
-import {
-  Hbox,
-  Separator,
-  Spacing,
-} from "../../../../atomic";
+import { Hbox, Separator, Spacing } from "../../../../atomic";
 import * as React from "react";
 import { Tooltip } from "../atm.tooltip";
 import { BulletStyled, LineStyled } from "./timeline.style";

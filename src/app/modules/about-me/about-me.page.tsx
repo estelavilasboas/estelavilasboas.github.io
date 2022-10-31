@@ -10,10 +10,7 @@ import {
 } from "../../atomic";
 import { Row } from "../../atomic/obj.grid";
 import * as React from "react";
-import {
-  BulletStyled,
-  LineStyled,
-} from "./about-me.style";
+import { BulletStyled, LineStyled } from "./about-me.style";
 import { Separator } from "../../atomic/obj.box/box.component.style";
 import { Header } from "./components/org.header/header.component";
 import { IntroductionSection } from "./components/org.introduction-section/introduction-section.component";
@@ -24,9 +21,13 @@ export const AboutMePage: React.FC = () => {
   return (
     <Row noGutter>
       {/* WIP WARNING START */}
-      <BackgroundColor style={{ position: "absolute", zIndex: 1, textAlign: "center"}}>
-        <H1 variant='white'>WIP</H1>
-        <H3 variant='white'>Hi! This website is a work in progress. Soon it will be available.</H3>
+      <BackgroundColor
+        style={{ position: "absolute", zIndex: 1, textAlign: "center" }}
+      >
+        <H1 variant="white">WIP</H1>
+        <H3 variant="white">
+          Hi! This website is a work in progress. Soon it will be available.
+        </H3>
       </BackgroundColor>
       <Separator size={Spacing.XXLarge} />
       <Separator size={Spacing.XXLarge} />
