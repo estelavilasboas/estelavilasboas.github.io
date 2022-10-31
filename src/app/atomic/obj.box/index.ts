@@ -1,1 +1,1 @@
-export * from './box.component.style';
+export * from "./box.component.style";
