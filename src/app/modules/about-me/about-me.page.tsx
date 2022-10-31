@@ -2,7 +2,7 @@ import { Body, BodySecondary, H3, H4, Hbox, HDisplay, Spacing } from '../../atom
 import { Row } from '../../atomic/obj.grid';
 import * as React from 'react';
 import { aboutMeStrings } from './about-me.strings';
-import { BackgroundStyled, BulletStyled, Divider, IntroductionWrapper, LineStyled, TooltipStyled } from './about-me.style';
+import { BackgroundStyled, BulletStyled, Divider, IntroductionWrapper, LineStyled, TooltipStyled, TrianglePointingLeft, TrianglePointingRight } from './about-me.style';
 import { VerticalImageWrapper, HorizontalImageWrapper } from './components/profile-image.style';
 import { Separator } from '../../atomic/obj.box/box.component.style';
 
@@ -78,6 +78,9 @@ export const AboutMePage: React.FC = () => {
               <BodySecondary>Trajetória</BodySecondary>
             </TooltipStyled>
           </Hbox.Item>
+          <Hbox.Item noGrow>
+            <TrianglePointingRight />
+          </Hbox.Item>
           <Hbox.Separator size={Spacing.XLarge} />
 
           <Hbox.Item noGrow>
@@ -85,6 +88,10 @@ export const AboutMePage: React.FC = () => {
             <LineStyled />
           </Hbox.Item>
           <Hbox.Separator size={Spacing.XLarge} />
+
+          <Hbox.Item noGrow>
+            <TrianglePointingLeft />
+          </Hbox.Item>
 
           <Hbox.Item hAlign='flex-start'>
             <TooltipStyled>
