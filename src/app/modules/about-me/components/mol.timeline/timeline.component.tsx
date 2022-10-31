@@ -1,39 +1,52 @@
 import { Hbox, Separator, Spacing } from "../../../../atomic";
 import * as React from "react";
-import { Tooltip } from "../atm.tooltip";
+import { Tooltip, TooltipProps } from "../atm.tooltip";
 import { BulletStyled, LineStyled } from "./timeline.style";
 
-export const Timeline: React.FC = () => (
-  <Hbox>
-    <Hbox.Item hAlign="flex-end">
-      <Tooltip
-        side="right"
-        jobTitle="aaaaaa"
-        employer="bbbbbb"
-        startDate="janieor"
-        endDate="dsddsad"
-        description="dsadasd defnks jdah dasjh das hdjsha hdsa hd hjas jhdh jsd jaw jhsdh jash jdah jsdh jas hjd hjas jhdh jash jda hs"
-      />
-      <Separator size={Spacing.XLarge} />
-    </Hbox.Item>
-    <Hbox.Separator size={Spacing.XLarge} />
+interface TimelineProps {
+  items: TooltipProps[];
+}
 
-    <Hbox.Item noGrow>
-      <BulletStyled />
-      <LineStyled />
-    </Hbox.Item>
-    <Hbox.Separator size={Spacing.XLarge} />
 
-    <Hbox.Item>
-      <Tooltip
-        side="left"
-        jobTitle="aaaaaa"
-        employer="bbbbbb"
-        startDate="janieor"
-        endDate="dsddsad"
-        description="dsadasd defnks jdah dasjh das hdjsha hdsa hd hjas jhdh jsd jaw jhsdh jash jdah jsdh jas hjd hjas jhdh jash jda hs"
-      />
-      <Separator size={Spacing.XLarge} />
-    </Hbox.Item>
-  </Hbox>
+export const Timeline: React.FC<TimelineProps> = ({ items }) => (
+  <>
+    {items.map((item, index) => {
+      const pointingSide = index % 2 === 0 ? "right" : "left";
+      const isLastItem = index === items?.length - 1;
+
+      return (
+        <TimelineItem {...item} side={pointingSide} isLastItem={isLastItem} />
+      );
+    })}
+  </>
 );
+
+interface TimelineItemProps extends TooltipProps {
+  isLastItem?: boolean;
+}
+
+export const TimelineItem: React.FC<TimelineItemProps> = (props) => {
+  const hideRight = props.side === "right";
+  const hideLeft = props.side === "left";
+
+  return (
+    <Hbox>
+      <Hbox.Item hAlign="flex-end" style={{ visibility: hideLeft ? 'hidden' : 'visible' }}>
+        <Tooltip {...props} />
+        <Separator size={Spacing.XLarge} />
+      </Hbox.Item>
+      <Hbox.Separator size={Spacing.XLarge} />
+
+      <Hbox.Item noGrow>
+        <BulletStyled />
+        {!props.isLastItem && <LineStyled />}
+      </Hbox.Item>
+      <Hbox.Separator size={Spacing.XLarge} />
+
+      <Hbox.Item style={{ visibility: hideRight ? 'hidden' : 'visible' }}>
+        <Tooltip {...props} />
+        <Separator size={Spacing.XLarge} />
+      </Hbox.Item>
+    </Hbox>
+  );
+};

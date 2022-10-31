@@ -5,12 +5,12 @@ import {
   TrianglePointingRight,
 } from "./tooltip.style";
 
-interface TooltipProps {
-  jobTitle: string;
-  employer: string;
-  startDate: string;
-  endDate: string;
-  description: string;
+export interface TooltipProps {
+  jobTitle?: string;
+  employer?: string;
+  startDate?: string;
+  endDate?: string;
+  description?: string;
   side?: "right" | "left";
 }
 

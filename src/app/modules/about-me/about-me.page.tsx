@@ -1,21 +1,16 @@
 import {
   BackgroundColor,
-  Body,
-  BodySecondary,
-  Divider,
   H3,
-  Hbox,
   H1,
   Spacing,
 } from "../../atomic";
 import { Row } from "../../atomic/obj.grid";
 import * as React from "react";
-import { BulletStyled, LineStyled } from "./about-me.style";
 import { Separator } from "../../atomic/obj.box/box.component.style";
 import { Header } from "./components/org.header/header.component";
 import { IntroductionSection } from "./components/org.introduction-section/introduction-section.component";
-import { Tooltip } from "./components/atm.tooltip/tooltip.component";
 import { Timeline } from "./components/mol.timeline/timeline.component";
+import { aboutMeStrings } from "./about-me.strings";
 
 export const AboutMePage: React.FC = () => {
   return (
@@ -44,10 +39,7 @@ export const AboutMePage: React.FC = () => {
         </H3>
         <Separator size={Spacing.XXLarge} />
 
-        <Timeline />
-        <Timeline />
-        <Timeline />
-        <Timeline />
+        <Timeline items={aboutMeStrings.timeline}/>
       </BackgroundColor>
     </Row>
   );
