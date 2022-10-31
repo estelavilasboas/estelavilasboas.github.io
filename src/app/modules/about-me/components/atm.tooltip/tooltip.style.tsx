@@ -8,9 +8,7 @@ const SPREAD_RADIUS = "2px";
 export const TooltipStyled = styled.div`
   width: 350px;
   height: 100%;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   background-color: ${Color.White};
   -webkit-box-shadow: ${HORIZONTAL_SHADOW} ${VERTICAL_SHADOW} 0px
     ${SPREAD_RADIUS} rgba(231, 218, 225, 1);

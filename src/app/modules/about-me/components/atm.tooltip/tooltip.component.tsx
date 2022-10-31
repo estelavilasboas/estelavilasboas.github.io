@@ -1,16 +1,17 @@
-import { Body, BodySecondary, Divider, H3, Hbox } from "../../../../atomic";
+import { Body, BodySecondary, Divider, H4, Hbox, Separator, Spacing } from "../../../../atomic";
 import {
   TooltipStyled,
   TrianglePointingLeft,
   TrianglePointingRight,
 } from "./tooltip.style";
 
-interface TooltipProps {
-  jobTitle: string;
-  employer: string;
-  startDate: string;
-  endDate: string;
-  description: string;
+export interface TooltipProps {
+  jobTitle?: string;
+  jobSubtitle?: string;
+  employer?: string;
+  startDate?: string;
+  endDate?: string;
+  description?: string;
   side?: "right" | "left";
 }
 
@@ -24,12 +25,21 @@ export const Tooltip: React.FC<TooltipProps> = (props) => (
 
     <Hbox.Item noGrow>
       <TooltipStyled>
-        <H3 variant="secondary">{props.jobTitle}</H3>
+        <H4 variant="secondary">{props.jobTitle}</H4>
+        {props.jobSubtitle && (
+          <>
+            <Body>{props.jobSubtitle}</Body>
+            <Separator size={Spacing.XSmall} />
+          </>
+        )}
         <Divider />
+
         <Body variant="secondary">{props.employer}</Body>
         <Body variant="secondary">
           {props.startDate} - {props.endDate}
         </Body>
+        <Separator size={Spacing.XSmall} />
+
         <BodySecondary variant="secondary">{props.description}</BodySecondary>
       </TooltipStyled>
     </Hbox.Item>
