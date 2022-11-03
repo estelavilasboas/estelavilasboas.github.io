@@ -11,8 +11,13 @@ export const FooterWrapper = styled.div`
   position: relative;
 `;
 
-export const FooterItem = styled.div`
+interface FooterItemProps {
+  width?: number;
+}
+
+export const FooterItem = styled.div<FooterItemProps>`
   background-color: ${Color.Accessory3};
   border-radius: ${Border.RadiusLarge};
-  padding: ${Spacing.XSmall} ${Spacing.XLarge};
+  padding: 10px ${Spacing.XLarge};
+  max-width: ${(props) => (props.width ? `${props.width}%` : "100%")};
 `;
