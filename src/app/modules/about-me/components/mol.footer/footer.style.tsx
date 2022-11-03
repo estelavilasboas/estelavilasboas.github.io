@@ -19,5 +19,5 @@ export const FooterItem = styled.div<FooterItemProps>`
   background-color: ${Color.Accessory3};
   border-radius: ${Border.RadiusLarge};
   padding: 10px ${Spacing.XLarge};
-  max-width: ${(props) => props.width ? `${props.width}%` : '100%'};
+  max-width: ${(props) => (props.width ? `${props.width}%` : "100%")};
 `;
