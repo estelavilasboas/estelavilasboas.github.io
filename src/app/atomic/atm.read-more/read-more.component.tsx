@@ -7,7 +7,7 @@ type ChildrenProps = {
 };
 
 export const ReadMore: React.FC<ChildrenProps> = ({ children }) => {
-  const text = children;
+  const text = children.split('\n');
   const [isReadMore, setIsReadMore] = React.useState(true);
 
   const handleReadMore = () => {
@@ -16,19 +16,28 @@ export const ReadMore: React.FC<ChildrenProps> = ({ children }) => {
 
   return (
     <>
-      {text && (
+      {text[0] && (
         <>
           <BodySecondary variant="secondary">
-            {isReadMore ? text?.slice(0, 200).concat('... ') : text}
+            {isReadMore ? text[0].concat('... ') : PrintAllItems(text as string[])}
           </BodySecondary>
-          <br />
-          <br />
+         
           <ReadMoreButton onClick={handleReadMore}>
             {isReadMore ? "Ver mais" : " Ver menos"}
           </ReadMoreButton>
-
         </>
       )}
     </>
   );
+};
+
+const PrintAllItems = (text: string[]) => {
+  return text.map((paragraph, index) => (
+    <React.Fragment key={index}>
+      <BodySecondary variant="secondary">
+        {paragraph}
+      </BodySecondary>
+      <br />
+    </React.Fragment>
+  ))
 };
