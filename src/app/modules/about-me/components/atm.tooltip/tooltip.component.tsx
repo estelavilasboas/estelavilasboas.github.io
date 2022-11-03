@@ -1,4 +1,5 @@
-import { Body, BodySecondary, Divider, H4, Hbox, Separator, Spacing } from "../../../../atomic";
+import { Body, Divider, H4, Hbox, Separator, Spacing } from "../../../../atomic";
+import { ReadMore } from "../../../../atomic/atm.read-more/read-more.component";
 import {
   TooltipStyled,
   TrianglePointingLeft,
@@ -40,7 +41,9 @@ export const Tooltip: React.FC<TooltipProps> = (props) => (
         </Body>
         <Separator size={Spacing.XSmall} />
 
-        <BodySecondary variant="secondary">{props.description}</BodySecondary>
+        <ReadMore>
+          {props.description ?? ''}
+        </ReadMore>
       </TooltipStyled>
     </Hbox.Item>
 
