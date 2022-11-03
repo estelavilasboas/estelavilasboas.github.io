@@ -3,7 +3,7 @@ export const aboutMeStrings = {
   introduction:
     "Eu sou a Estela. Sou desenvolvedora front-end, bacharel em Ciência da Computação com experiência na construção de websites e aplicativos mobile.",
   description:
-    "Descobrir o que você ama fazer é uma jornada, e para mim não foi diferente. Desde que consigo me lembrar, sinto um entusiasmo pelo mundo do design gráfico, pelas cores e formas que podem levar diferentes emoções para as pessoas. \nNa graduação, percebi que tem outra coisa que me encanta: o código. \nEu descobri afinal que um dos fatores que mais gostava no design era entender como as pessoas se sentem ao ver e utilizar algo. Ser front-end permite que eu junte esses dois lados. Ser front-end me permite ver algumas brechas na aplicação que podem ser críticas.Também me permite desenhar as telas e pensar em melhorar o fluxo e funcionalidades para o usuário.",
+    "Descobrir o que você ama fazer é uma jornada, e para mim não foi diferente. Desde que consigo me lembrar, sinto um entusiasmo pelo mundo do design gráfico, pelas cores e formas que podem levar diferentes emoções para as pessoas. \nNa graduação, percebi que tem outra coisa que me encanta: o código. \nEu descobri afinal que um dos fatores que mais gostava no design era entender como as pessoas se sentem ao ver e utilizar algo. Ser front-end permite que eu junte esses dois lados. Ser front-end me permite ver algumas brechas na aplicação que podem ser críticas. Também me permite desenhar as telas e pensar em melhorar o fluxo e funcionalidades para o usuário.",
   timeline: [
     {
       jobTitle: "Desenvolvedor front-end",
