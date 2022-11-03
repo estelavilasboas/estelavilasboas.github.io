@@ -1,4 +1,11 @@
-import { Body, Divider, H4, Hbox, Separator, Spacing } from "../../../../atomic";
+import {
+  Body,
+  Divider,
+  H4,
+  Hbox,
+  Separator,
+  Spacing,
+} from "../../../../atomic";
 import { ReadMore } from "../../../../atomic/atm.read-more/read-more.component";
 import {
   TooltipStyled,
@@ -41,9 +48,7 @@ export const Tooltip: React.FC<TooltipProps> = (props) => (
         </Body>
         <Separator size={Spacing.XSmall} />
 
-        <ReadMore>
-          {props.description ?? ''}
-        </ReadMore>
+        <ReadMore>{props.description ?? ""}</ReadMore>
       </TooltipStyled>
     </Hbox.Item>
 

@@ -7,4 +7,3 @@ export const ReadMoreButton = styled.span`
   font-size: ${FontSize.XXSmall};
   font-family: ${FontFamily.Primary};
 `;
-

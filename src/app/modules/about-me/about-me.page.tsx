@@ -37,8 +37,7 @@ export const AboutMePage: React.FC = () => {
 
         <Timeline items={aboutMeStrings.timeline} />
 
-        <Footer /> 
-
+        <Footer />
       </BackgroundColor>
     </Row>
   );

@@ -19,17 +19,20 @@ export const IntroductionSection: React.FC = () => (
         />
       </HorizontalImageWrapper>
     </Hbox.Item>
-    <Hbox.Separator size={Spacing.XXLarge} />
+    <Hbox.Separator size={Spacing.XLarge} />
+    <Hbox.Separator size={Spacing.Medium} />
 
     <Hbox.Item>
       <Separator size={Spacing.XXLarge} />
       <Separator size={Spacing.XXLarge} />
-      <Body variant="primary">
-        {strings.introduction}
-        {strings.introduction}
-        {strings.introduction}
-      </Body>
-      <Separator size={Spacing.XXLarge} />
+
+      {strings.description.split("\n").map((paragraph, index) => (
+        <React.Fragment key={index}>
+          <Body variant="primary">{paragraph}</Body>
+          <br />
+        </React.Fragment>
+      ))}
+      <Separator size={Spacing.XLarge} />
     </Hbox.Item>
     <div style={{ width: "15%" }} />
   </Hbox>
