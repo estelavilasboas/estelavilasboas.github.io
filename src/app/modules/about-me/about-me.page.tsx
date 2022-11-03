@@ -6,6 +6,7 @@ import { Header } from "./components/org.header/header.component";
 import { IntroductionSection } from "./components/org.introduction-section/introduction-section.component";
 import { Timeline } from "./components/mol.timeline/timeline.component";
 import { aboutMeStrings } from "./about-me.strings";
+import { Footer } from "./components/mol.footer/footer.component";
 
 export const AboutMePage: React.FC = () => {
   return (
@@ -35,6 +36,9 @@ export const AboutMePage: React.FC = () => {
         <Separator size={Spacing.XXLarge} />
 
         <Timeline items={aboutMeStrings.timeline} />
+
+        <Footer /> 
+
       </BackgroundColor>
     </Row>
   );
