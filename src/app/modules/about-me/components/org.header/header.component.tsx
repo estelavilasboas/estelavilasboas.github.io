@@ -21,7 +21,7 @@ export const Header: React.FC = () => (
         <Separator size={Spacing.XSmall} />
 
         <Body variant={"accessory3"}>{strings.introduction}</Body>
-        <Separator />
+        <Separator size={Spacing.XXLarge} />
       </IntroductionWrapper>
     </BackgroundColor>
 

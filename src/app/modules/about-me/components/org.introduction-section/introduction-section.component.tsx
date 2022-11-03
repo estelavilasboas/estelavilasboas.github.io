@@ -23,7 +23,7 @@ export const IntroductionSection: React.FC = () => (
 
     <Hbox.Item>
       <Separator size={Spacing.XXLarge} />
-      <Separator size={Spacing.XLarge} />
+      <Separator size={Spacing.XXLarge} />
       <Body variant="primary">
         {strings.introduction}
         {strings.introduction}
