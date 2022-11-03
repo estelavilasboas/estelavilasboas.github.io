@@ -20,6 +20,6 @@ interface BackgroundColorProps {
 export const BackgroundColor = styled.div<BackgroundColorProps>`
   background-color: ${(props) =>
     props.variant ? BackgroundVariantColors[props.variant] : Color.Primary};
-  padding: ${Spacing.XXLarge} 0;
+  padding: ${Spacing.XXLarge} 0 0 0;
   width: 100%;
 `;
