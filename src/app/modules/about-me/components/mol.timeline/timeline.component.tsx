@@ -17,6 +17,7 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => (
         <TimelineItem {...item} side={pointingSide} isLastItem={isLastItem} />
       );
     })}
+    <Separator />
   </>
 );
 
@@ -35,7 +36,6 @@ export const TimelineItem: React.FC<TimelineItemProps> = (props) => {
         style={{ visibility: hideLeft ? "hidden" : "visible" }}
       >
         <Tooltip {...props} />
-        <Separator size={Spacing.XLarge} />
       </Hbox.Item>
       <Hbox.Separator size={Spacing.XLarge} />
 
@@ -47,7 +47,6 @@ export const TimelineItem: React.FC<TimelineItemProps> = (props) => {
 
       <Hbox.Item style={{ visibility: hideRight ? "hidden" : "visible" }}>
         <Tooltip {...props} />
-        <Separator size={Spacing.XLarge} />
       </Hbox.Item>
     </Hbox>
   );
