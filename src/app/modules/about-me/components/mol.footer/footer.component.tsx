@@ -3,7 +3,7 @@ import { Body, Hbox, Spacing } from "../../../../atomic";
 
 import { FooterBackground, Avatar } from "../icons.component";
 import { FooterItem, FooterWrapper, InfoWrapper } from "./footer.style";
-import { Separator } from '../../../../atomic/obj.box/box.component.style';
+import { Separator } from "../../../../atomic/obj.box/box.component.style";
 
 export const Footer: React.FC = () => {
   return (
@@ -30,7 +30,6 @@ export const Footer: React.FC = () => {
               <Body variant="primary">linkedin.com/in/estelavilasboas/</Body>
             </FooterItem>
             <Separator />
-
           </Hbox.Item>
           <Hbox.Separator size={Spacing.XXLarge} />
           <Hbox.Separator size={Spacing.XXLarge} />

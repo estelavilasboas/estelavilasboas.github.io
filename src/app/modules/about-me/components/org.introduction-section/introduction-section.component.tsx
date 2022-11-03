@@ -26,11 +26,9 @@ export const IntroductionSection: React.FC = () => (
       <Separator size={Spacing.XXLarge} />
       <Separator size={Spacing.XXLarge} />
 
-      {strings.description.split('\n').map((paragraph, index) => (
+      {strings.description.split("\n").map((paragraph, index) => (
         <React.Fragment key={index}>
-          <Body variant="primary">
-            {paragraph}
-          </Body>
+          <Body variant="primary">{paragraph}</Body>
           <br />
         </React.Fragment>
       ))}
