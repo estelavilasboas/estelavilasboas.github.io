@@ -33,6 +33,7 @@ export const Footer: React.FC = () => {
 
           </Hbox.Item>
           <Hbox.Separator size={Spacing.XXLarge} />
+          <Hbox.Separator size={Spacing.XXLarge} />
 
           <Hbox.Item noGrow>
             <Avatar />
