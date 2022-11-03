@@ -21,12 +21,12 @@ export const Footer: React.FC = () => {
             </FooterItem>
             <Separator />
 
-            <FooterItem>
+            <FooterItem width={70}>
               <Body variant="primary">(49) 99833-3554</Body>
             </FooterItem>
             <Separator />
 
-            <FooterItem>
+            <FooterItem width={80}>
               <Body variant="primary">linkedin.com/in/estelavilasboas/</Body>
             </FooterItem>
             <Separator />
