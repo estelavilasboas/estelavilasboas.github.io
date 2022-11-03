@@ -51,7 +51,7 @@ export const aboutMeStrings = {
       startDate: "2016",
       endDate: "2021",
       description:
-        "Trabalho de Conclusão de Curso: 'Geração procedural de terrenos utilizando agentes inteligentes e steering behaviors'. Orientado por Prof. Dr. Fernando Bevilacqua;\nAtividades e grupos:\n• Representação estudantil no Centro Acadêmico de Ciência da Computação;\n• Organização da XV Escola Regional de Banco de Dados (ERBD) e da Conferência Internacional Brasil e Argentina de Inteligência Artificial; \n• Grupo de Estudos em Ciência de Dados; \n• Grupo de Estudos de Modelagem e Impressão 3D;",
+        "Trabalho de Conclusão de Curso: 'Geração procedural de terrenos utilizando agentes inteligentes e steering behaviors'. Orientado por Prof. Dr. Fernando Bevilacqua;\n\nAtividades e grupos:\n• Representação estudantil no Centro Acadêmico de Ciência da Computação;\n• Organização da XV Escola Regional de Banco de Dados (ERBD) e da Conferência Internacional Brasil e Argentina de Inteligência Artificial; \n• Grupo de Estudos em Ciência de Dados; \n• Grupo de Estudos de Modelagem e Impressão 3D;",
     },
   ],
 };
